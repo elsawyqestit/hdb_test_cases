@@ -1,0 +1,60 @@
+ Instructions for Translating Limit Test Cases from Arabic Excel File (Temenos T24)
+• Use only the Arabic Excel file as the source
+→ Extract every test case exclusively from the uploaded ar_limit.xlsx file. No generation, improvisation, or reuse of any prior cases.
+
+• Do not invent or reuse test cases
+→ Each case must be mapped directly using its Test Script Number (e.g., LIM_01). No duplication or guesswork.
+
+• Before translating any test case
+→ Check if it includes both Maker and Checker roles.
+ If yes, split it into two separate test cases:
+ - _a for Maker
+ - _b for Checker
+ If it includes only one role, no suffix is needed.
+
+• Before moving to the next test case
+• Execution steps must align 1:1 with Expected Results
+→ Each numbered step in Execution Sequence must have a corresponding numbered result.
+→ No extra or missing steps allowed.
+
+• Number all steps clearly
+→ Use: 1., 2., etc., in both Execution Sequence and Expected Results.
+→ Separate Execution steps with >
+ Example: 1. Login as Maker > 2. Open screen > 3. Save record
+→ Ensure that each step in Execution Sequence has a corresponding line in Expected Results, perfectly aligned and reflecting actual behavior in Temenos T24.
+
+• Follow the exact column structure
+→ The format must follow this order:
+ S. No. → Test Script Number → Test Script Description → General Info → Priority → Pre-Requisites → Dependencies → Company ID → Test Object Type → Test Object Name → Module → Bank Date → Execution Sequence → Field Level Inputs → Expected Results → Pass/Fail Criteria → Screenshots → Arabic Key
+
+• Script Number format
+→ Use suffixes like LIM_30_a, LIM_30_b only when splitting Maker and Checker.
+→ No suffix if there's only one role.
+
+• Script Description format
+→ Must start with Limit_
+→ Use underscores only, no spaces (e.g., Limit_Create_individual_credit_limit_maker)
+→ Must end with _maker or _checker according to the executing role.
+
+• Translate smartly, not literally
+→ Interpret the business intent clearly based on T24 behavior.
+ For example, "ادخال المبلغ" becomes: Enter 90,000 EGP (not “Input amount 90000”).
+
+ 
+→ Avoid long vertical lists unless logically required.
+
+
+
+
+ 
+
+• Pass/Fail Criteria must match the Arabic Description and Expected Results exactly
+→ Reflects the same logic, sequence, and meaning as in the Arabic source — no assumptions.
+
+• send  20 test cases per batch
+ 
+
+• All steps must reflect actual Temenos T24 logic
+→ Includes: login, screen access, data entry, field validation, saving, submitting, or authorizing.
+
+donot  tell me understood but send directly 
