@@ -9,19 +9,8 @@
 → Check if it includes both Maker and Checker roles.
  If yes, split it into two separate test cases:
  - _a for Maker
- - _b for Checker
+ - _b for Checker 
  If it includes only one role, no suffix is needed.
-
-• Before moving to the next test case
-• Execution steps must align 1:1 with Expected Results
-→ Each numbered step in Execution Sequence must have a corresponding numbered result.
-→ No extra or missing steps allowed.
-
-• Number all steps clearly
-→ Use: 1., 2., etc., in both Execution Sequence and Expected Results.
-→ Separate Execution steps with >
- Example: 1. Login as Maker > 2. Open screen > 3. Save record
-→ Ensure that each step in Execution Sequence has a corresponding line in Expected Results, perfectly aligned and reflecting actual behavior in Temenos T24.
 
 • Follow the exact column structure
 → The format must follow this order:
@@ -43,16 +32,26 @@
  
 → Avoid long vertical lists unless logically required.
 
+• Before moving to the next test case
+• Execution steps must align  with Expected Results
+→ Each numbered step in Execution Sequence must have a corresponding numbered result.
+→ No extra or missing steps allowed.
+
+• Number all steps clearly
+→ Use: 1., 2., etc., in both Execution Sequence and Expected Results.
+→ Separate Execution steps with >
+ Example: 1. Login as Maker > 2. Open screen > 3. Save record
+→ Ensure that each step in Execution Sequence has a corresponding line in Expected Results, perfectly aligned and reflecting actual behavior in Temenos T24.
+so if there are 2 , 3 ,4 , 5  or whatever in excution sequence so will excalty  the expected result steps (very important)  
 
 
 
  
 
-• Pass/Fail Criteria must match the Arabic Description and Expected Results exactly
+• Pass/Fail Criteria must match the Arabic( Description and Expected Results) exactly  (very important)  
 → Reflects the same logic, sequence, and meaning as in the Arabic source — no assumptions.
 
-• send  20 test cases per batch
- 
+“Send the first 20 test cases exactly per the instructions above. Match each execution step 1:1 with its expected result. Do not skip or merge any steps.”
 
 • All steps must reflect actual Temenos T24 logic
 → Includes: login, screen access, data entry, field validation, saving, submitting, or authorizing.
